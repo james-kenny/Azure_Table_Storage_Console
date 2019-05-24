@@ -93,7 +93,7 @@ namespace Azure_Table_Storage_Console
       CloudStorageAccount storageAccount = new CloudStorageAccount(new Microsoft.WindowsAzure.Storage.Auth.StorageCredentials(_accountName, _accountKey), true);
       CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
 
-      CloudTable _linkTable = tableClient.GetTableReference("linkTable");
+      CloudTable _linkTable = tableClient.GetTableReference("TABLENAME");
 
       _linkTable.CreateIfNotExists();
 
